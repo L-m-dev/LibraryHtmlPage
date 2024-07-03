@@ -1,0 +1,145 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  * {
+    margin: 0;
+  }
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  input, button, textarea, select {
+    font: inherit;
+  }
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  #root, #__next {
+    isolation: isolate;
+  }
+  
+
+
+body{
+    margin: auto;
+    width: 70%;
+    background-color: rgb(61, 68, 75);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    height:150px;
+    color:white;
+   padding-left:40px;
+    place-content: center;
+    font-size: 2.8em;
+    letter-spacing: 6px;
+}
+main{
+    background-color: white;
+    height: 800px;
+}
+
+.button-menu{
+    background-color: rgb(255, 255, 255);
+    height: 100px;
+     padding-top: 4em;
+    display: grid;
+    padding-left: 5em;
+    
+  
+    
+}
+.button-menu>form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  
+}
+
+.title{
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+.author{
+  grid-column: 1/2;
+  grid-row: 3/5;
+}
+.pageNumber{
+  grid-column: 2/3;
+  grid-row: 1/3;
+}
+.hasRead{
+  grid-column:2/3;
+  grid-row: 3/5;
+
+}
+#add-book{
+  grid-column: 2/3;
+  color: white;
+  background-color: darkgreen;
+  width: 40%;
+}
+
+.card{
+    height: 6rem;
+    background-color: rgb(255, 255, 255);
+     display:grid;
+    font-size:  1em;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2.5fr   1fr 1fr;
+    padding-left: 10px;
+    border-top: 1px solid gold;
+    border-bottom: 1px solid gold;
+    border-radius: 5px;
+    background-color: rgb(255, 220, 169);
+ margin-top:20px;
+
+ }
+  .card>button:nth-of-type(2){
+    grid-column: 4/5;
+    grid-row: 2/3;
+    background-color: white;
+    font-size: 0.8em;
+    width: 80%;
+    
+  }
+  .card>button:nth-of-type(1){
+    grid-column: 4/5;
+    grid-row: 1/2;
+    background-color: white;
+    font-size: 0.7em;
+    width: 80%;
+  }
+
+
+ .card>p:nth-child(2){
+  grid-column: 1/4;
+  grid-row: 1/2;
+  font-size: 1.4em;
+  }
+ .card>p:nth-child(1){
+  grid-column: 1/4;
+  grid-row: 2/3;
+  
+  }
+  .card>p:nth-child(3){
+    grid-column:2/3;
+    grid-row:1/2;
+  }
+  .card>p:nth-child(4){
+    grid-column: 3/4;
+    grid-row:1/2;
+  }
+
+
+  .book-container{
+    margin-top:13em;
+  }
