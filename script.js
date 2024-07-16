@@ -10,11 +10,9 @@ let hasReadDom = document.querySelector('#hasRead');
 let toggleButton = document.querySelectorAll('.toggle-read');
 let removeButtonDom = document.querySelectorAll('.remove-button');
 
-function Book(title, author, pageNumber, isRead){
-    this.author = author;
-    this.title = title;
-    this.pageNumber = pageNumber;
-    this.isRead = isRead;
+class Book(title, author, pageNumber, isRead){
+    constructor(title,author,pageNumber,isRead);
+
 }
 
 function addBookToLibrary(title, author, pageNumber, hasRead){
